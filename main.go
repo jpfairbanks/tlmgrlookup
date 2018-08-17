@@ -19,6 +19,7 @@ func main() {
 			dir := path.Dir(file)
 			pkg := path.Base(dir)
 			fmt.Printf("Result: %d\t%s\t%s\n", i, file, pkg)
+			fmt.Printf("To install this package run:\n")
 			fmt.Printf("\n\t sudo tlmgr install %s\n\n ", pkg)
 		}
 	}
