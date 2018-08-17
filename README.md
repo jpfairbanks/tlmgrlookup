@@ -54,9 +54,6 @@ go install .
 ```
 
 ## Usage
-
-
-
 To use this package you just provide
 `$ tlmgrlookup filename.sty`
 
@@ -72,3 +69,6 @@ To install this package run:
 
 ```
 
+# LICENSE
+
+This software is licensed under the AGPL.
