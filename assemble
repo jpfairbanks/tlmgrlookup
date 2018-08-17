@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+cat arch.txt ubuntu.txt  | sed 's/^.*texmf-dist\/\(.*\)$/\1/g' | sort | uniq > data.txt
+echo "package main" > data.go
+echo 'var Files string = `' >> data.go
+cat data.txt >> data.go
+echo '`' >> data.go
+head data.go
+echo "..."
+tail data.go
